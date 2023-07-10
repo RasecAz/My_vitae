@@ -1,0 +1,66 @@
+<div class="example-container mat-elevation-z8">
+  <div class="row">
+    <div class="col-12">
+      <mat-card-content>
+        <h1>Proyectos</h1>
+      </mat-card-content>
+    </div>
+  </div>
+</div>
+<br />
+
+<div class="example-container">
+  <section class="container mb-5">
+    <mat-accordion class="fontText">
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Listado de proyectos ejecutados y en proceso.
+          </mat-panel-title>
+          <!--<mat-panel-description>
+          This is a summary of the content
+        </mat-panel-description>-->
+        </mat-expansion-panel-header>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title class="titles">
+            Proyecto realizado en avianca.
+          </mat-panel-title>
+          <mat-panel-description>
+            {{panelOpenState ? 'open' : 'closed'}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>
+          El proyecto realizado en Avianca, ejecutado en dominio interno para su personal,
+          no se puede publicar o compartir por este medio, en cambio explicare su metodología,
+          uso y capacidad que tiene, también explicare su tecnología implementada y sus alcances,
+          para el cual fue diseñado.
+        </p><br />
+        <p>
+          A petición del cliente, se instaura la migración de una app que está basada en angular 7,
+          y en este mismo proyecto se aloja el proyecto Back-End, el cual también se pide una modificación
+          de su tecnología aplicando herramientas de ultima versión, se verifica en las historias de usuarios,
+          que se desea añadir una seguridad basada en nube, y se sugiere la que presta Azure, la cual es la de
+          Azure Active Directory (AAD).
+
+        </p><br />
+        <p>
+          Se procede a aplicar en el proyecto Front, el Angular de la versión más actual, se migran todos sus servicios,
+          sus modelos, y todas estas carpetas que se ajustan a una migración amigable, se instauran seguridades como HTTPS y
+          las cabeceras en sus routers, y se enlazan con los archivos de seguridad, provenientes del archivo Back.
+        </p><br />
+        <p>
+          Para el proyecto en Back-End, se implementó el Framework .Net y allí se alojó con las arquitecturas limpias,
+          más exactas, como Ardalis, en función de su interfaz confiable y fácil, en su lenguaje se implementó le C#
+        </p>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <div class="popup mt-3">
+      <div class="btn- btn-success">
+        <button mat-raised-button (click)="openDialog()">Add New Project</button>
+      </div>
+    </div>
+  </section>
+</div>

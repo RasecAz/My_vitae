@@ -1,0 +1,29 @@
+.card-home {
+  max-width: 200px;
+}
+
+.card-body {
+  width: 250%;
+}
+
+.card-content{
+  width: 300%;
+}
+
+.example-header-image {
+  background-image: src('./assets/image/FotoIcono.jpeg');
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+}
+
+.example-header {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 24px 0;
+}
+
+
+
